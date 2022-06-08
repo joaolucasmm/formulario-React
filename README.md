@@ -10,4 +10,4 @@ Fazer aquisição dos dados para salvar em arquivo local ou enviar para API. Tam
 
 Baixar arquivos e executar o comando dentra da pasta principal
 
-''' npm start '''
+``` npm start ```
