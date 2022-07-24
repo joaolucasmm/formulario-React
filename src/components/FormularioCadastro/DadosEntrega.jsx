@@ -1,5 +1,7 @@
 import { Button, TextField } from '@mui/material';
 import React, { useState } from 'react';
+import { useContext } from 'react';
+import ValidacoesCadastro from '../../contexts/validacoesCadastro';
 
 function DadosEntrega({ aoEnviar }){
     const [cep, setCep] = useState("");
@@ -7,6 +9,7 @@ function DadosEntrega({ aoEnviar }){
     const [numero, setNumero] = useState("");
     const [estado, setEstado] = useState("");
     const [cidade, setCidade] = useState("");
+    const validacoes = useContext(ValidacoesCadastro);
     return(
         <form onSubmit={
             (event) =>{
